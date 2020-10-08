@@ -1,9 +1,25 @@
 {
   "name": "react-ts-snippets",
   "displayName": "React TS snippets",
+  "author": "Paulius Rimgaila",
+  "license": "MIT",
   "description": "Useful snippets for React, Styled Components in TypeScript ",
   "version": "0.0.1",
+  "homepage": "https://github.com/user1990/react-ts-snippets",
   "icon": "icon.png",
+  "publisher": "user1990",
+  "keywords": [
+    "react",
+    "react snippets",
+    "react typescript snippets",
+    "jsx snippets",
+    "react TS jsx",
+    "vs code snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user1990/react-ts-snippets"
+  },
   "engines": {
     "vscode": "^1.49.0"
   },
