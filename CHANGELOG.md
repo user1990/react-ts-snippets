@@ -2,6 +2,10 @@
 
 All notable changes to the "react-ts-snippets" extension will be documented in this file.
 
+## [1.2.3]
+
+- Fix syntax
+
 ## [1.2.2]
 
 - Add snippets for styled components

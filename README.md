@@ -16,6 +16,8 @@ This extension contains code snippets for React, TS, styled components, and is b
 
 ![Use Extension](images/data.gif)
 
+---
+
 ## Snippets
 
 | Snippet   | Purpose                                   |
@@ -27,3 +29,10 @@ This extension contains code snippets for React, TS, styled components, and is b
 | `jsxpr`   | Print JSX data                            |
 | `jsxmap`  | JSX map an array                          |
 | `jsxmapr` | JSX map an array with Fragment            |
+
+
+---
+
+### CHANGELOG
+
+See the [CHANGELOG](CHANGELOG.md) for the latest changes
