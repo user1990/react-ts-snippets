@@ -35,21 +35,12 @@
   "contributes": {
     "snippets": [
       {
-        "language": "html",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/ts-react-snippets.json"
       }
     ]
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
   }
 }
