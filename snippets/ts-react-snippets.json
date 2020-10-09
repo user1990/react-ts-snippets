@@ -32,6 +32,7 @@
       "      <h1>React TS FC Component</h1>",
       "      <div>List</div>",
       "    </>",
+      "  );",
       "};"
     ],
     "description": "Create react functional TS component"
@@ -64,7 +65,7 @@
     "body": [
       "const $1 = styled.div`",
       "  ",
-      "`;",
+      "`;"
     ],
     "description": "Create empty react functional styled TS component"
   },
