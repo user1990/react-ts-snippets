@@ -2,6 +2,10 @@
 
 All notable changes to the "react-ts-snippets" extension will be documented in this file.
 
+## [1.2.0]
+
+- Add support for ts react
+
 ## [1.1.0]
 
 - Updated snippets to be more cleaner
