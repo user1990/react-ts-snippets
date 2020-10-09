@@ -36,6 +36,38 @@
     ],
     "description": "Create react functional TS component"
   },
+  "Create Styled TFC component": {
+    "prefix": "tfcs",
+    "body": [
+      "import React from 'react';",
+      "import styled from 'styled-components'",
+      "",
+      "type $1Props = {}",
+      "",
+      "const StyledCard = styled.div`",
+      "  display: flex;",
+      "  align-items: center;",
+      "  justify-content: center;",
+      "`;",
+      "",
+      "export const $1 = ({}: $1Props) => (",
+      "  <StyledCard>",
+      "    <h1>React TS FC Component</h1>",
+      "    <div>List</div>",
+      "  </StyledCard>",
+      ");"
+    ],
+    "description": "Create react functional styled TS component"
+  },
+  "Create empty Styled TFC component": {
+    "prefix": "tfcse",
+    "body": [
+      "const $1 = styled.div`",
+      "  ",
+      "`;",
+    ],
+    "description": "Create empty react functional styled TS component"
+  },
   "Print data in JSX": {
     "prefix": "jsxpr",
     "body": ["<pre>{JSON.stringify($1, null, 2)}</pre>"],

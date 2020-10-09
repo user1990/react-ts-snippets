@@ -22,6 +22,8 @@ This extension contains code snippets for React, TS, styled components, and is b
 | --------- | ----------------------------------------- |
 | `tfc`     | Create Typescript FC component            |
 | `tfch`    | Create Typescript FC component with hooks |
+| `tfcs`    | Create styled Typescript FC component     |
+| `tfce`    | Create empty styled component             |
 | `jsxpr`   | Print JSX data                            |
 | `jsxmap`  | JSX map an array                          |
 | `jsxmapr` | JSX map an array with Fragment            |
