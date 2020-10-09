@@ -4,11 +4,14 @@
     "body": [
       "import React from 'react';",
       "",
-      "type $1Props {}",
+      "type $1Props = {}",
       "",
-      "export const $1 = ({ }: $1Props) => {",
-      "  return <>TS FC Component</>;",
-      "};"
+      "export const $1 = ({}: $1Props) => (",
+      "  <>",
+      "    <h1>React TS FC Component</h1>",
+      "    <div>List</div>",
+      "  </>",
+      ");"
     ],
     "description": "Create react functional TS component"
   },
@@ -17,35 +20,34 @@
     "body": [
       "import React, { useEffect, useState } from 'react';",
       "",
-      "type $1Props {}",
+      "type $1Props = {}",
       "",
-      "export const $1: $1Props = () => {",
+      "export const $1 = ({}: $1Props) => {",
       "  const [state, setState] = useState();",
       "",
       "  useEffect(() => {}, []);",
       "",
-      "  return <>TS FC Component with hooks</>;",
+      "  return (",
+      "    <>",
+      "      <h1>React TS FC Component</h1>",
+      "      <div>List</div>",
+      "    </>",
       "};"
     ],
-    "description": "Create react functional TS component with hooks"
+    "description": "Create react functional TS component"
   },
-  "Print JSX data": {
+  "Print data in JSX": {
     "prefix": "jsxpr",
     "body": ["<pre>{JSON.stringify($1, null, 2)}</pre>"],
-    "description": "Print JSX data for testing"
+    "description": "Print JSX data"
   },
-  "JSX map an array": {
+  "Map an array on JSX": {
     "prefix": "jsxmap",
-    "body": ["{$1.map(item => (", " <div key={item.id}></div>", "))}"],
-    "description": "Map array in jsx"
-  },
-  "JSX map an array with Fragment": {
-    "prefix": "jsxmapr",
     "body": [
-      "{$1.map(item => (",
-      " <React.Fragment key={item.id}></React.Fragment>",
+      "{!!$1.length && $1.map(item => (",
+      " <div key={item.id}></div>",
       "))}"
     ],
-    "description": "Map array with fragment in jsx"
+    "description": "Map array in jsx"
   }
 }
