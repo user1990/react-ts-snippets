@@ -1,12 +1,11 @@
 {
   "Create TFC component": {
     "prefix": "tfc",
-    "body": [
-      "import React from 'react';",
+    "body": [,
       "",
-      "type $1Props = {}",
+      "type I${1:${TM_FILENAME_BASE}}Props = {}",
       "",
-      "export const $1 = ({}: $1Props) => (",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props): JSX.Element => (",
       "  <>",
       "    <h1>React TS FC Component</h1>",
       "    <div>List</div>",
@@ -18,11 +17,11 @@
   "Create TFC component with hooks": {
     "prefix": "tfch",
     "body": [
-      "import React, { useEffect, useState } from 'react';",
+      "import { useEffect, useState } from 'react';",
       "",
-      "type $1Props = {}",
+      "type I${1:${TM_FILENAME_BASE}}$1Props = {}",
       "",
-      "export const $1 = ({}: $1Props) => {",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props): JSX.Element => {",
       "  const [state, setState] = useState();",
       "",
       "  useEffect(() => {}, []);",
@@ -30,7 +29,7 @@
       "  return (",
       "    <>",
       "      <h1>React TS FC Component</h1>",
-      "      <div>List</div>",
+      "      <div>${1:${TM_FILENAME_BASE}}</div>",
       "    </>",
       "  );",
       "};"
@@ -40,10 +39,9 @@
   "Create Styled TFC component": {
     "prefix": "tfcs",
     "body": [
-      "import React from 'react';",
       "import styled from 'styled-components'",
       "",
-      "type $1Props = {}",
+      "type I${1:${TM_FILENAME_BASE}}Props = {}",
       "",
       "const StyledCard = styled.div`",
       "  display: flex;",
@@ -51,7 +49,7 @@
       "  justify-content: center;",
       "`;",
       "",
-      "export const $1 = ({}: $1Props) => (",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props): JSX.Element => (",
       "  <StyledCard>",
       "    <h1>React TS FC Component</h1>",
       "    <div>List</div>",
@@ -63,7 +61,7 @@
   "Create empty Styled TFC component": {
     "prefix": "tfcse",
     "body": [
-      "const $1 = styled.div`",
+      "const ${1:${TM_FILENAME_BASE}}_STYLE = styled.div`",
       "  ",
       "`;"
     ],
@@ -71,14 +69,14 @@
   },
   "Print data in JSX": {
     "prefix": "jsxpr",
-    "body": ["<pre>{JSON.stringify($1, null, 2)}</pre>"],
+    "body": ["<pre>{JSON.stringify(, null, 2)}</pre>"],
     "description": "Print JSX data"
   },
   "Map an array on JSX": {
     "prefix": "jsxmap",
     "body": [
-      "{!!$1.length && $1.map(item => (",
-      " <div key={item.id}></div>",
+      "{!!$1.length && $1.map((value:any, index:number) => (",
+      " <div key={index}></div>",
       "))}"
     ],
     "description": "Map array in jsx"
