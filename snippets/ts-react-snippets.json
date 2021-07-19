@@ -5,7 +5,7 @@
       "",
       "type I${1:${TM_FILENAME_BASE}}Props = {}",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props) => (",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props): JSX.Element => (",
       "  <>",
       "    <h1>React TS FC Component</h1>",
       "    <div>List</div>",
@@ -21,7 +21,7 @@
       "",
       "type I${1:${TM_FILENAME_BASE}}$1Props = {}",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props) => {",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props): JSX.Element => {",
       "  const [state, setState] = useState();",
       "",
       "  useEffect(() => {}, []);",
@@ -49,7 +49,7 @@
       "  justify-content: center;",
       "`;",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props) => (",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: I${1:${TM_FILENAME_BASE}}Props): JSX.Element => (",
       "  <StyledCard>",
       "    <h1>React TS FC Component</h1>",
       "    <div>List</div>",
@@ -61,7 +61,7 @@
   "Create empty Styled TFC component": {
     "prefix": "tfcse",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}} = styled.div`",
+      "const ${1:${TM_FILENAME_BASE}}_STYLE = styled.div`",
       "  ",
       "`;"
     ],
@@ -75,8 +75,8 @@
   "Map an array on JSX": {
     "prefix": "jsxmap",
     "body": [
-      "{!!$1.length && $1.map(item => (",
-      " <div key={item.id}></div>",
+      "{!!$1.length && $1.map((value:any, index:number) => (",
+      " <div key={index}></div>",
       "))}"
     ],
     "description": "Map array in jsx"
