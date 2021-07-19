@@ -1,8 +1,7 @@
 {
   "Create TFC component": {
     "prefix": "tfc",
-    "body": [
-      "import React from 'react';",
+    "body": [,
       "",
       "type I${1:${TM_FILENAME_BASE}}Props = {}",
       "",
@@ -18,7 +17,7 @@
   "Create TFC component with hooks": {
     "prefix": "tfch",
     "body": [
-      "import React, { useEffect, useState } from 'react';",
+      "import { useEffect, useState } from 'react';",
       "",
       "type I${1:${TM_FILENAME_BASE}}$1Props = {}",
       "",
@@ -40,7 +39,6 @@
   "Create Styled TFC component": {
     "prefix": "tfcs",
     "body": [
-      "import React from 'react';",
       "import styled from 'styled-components'",
       "",
       "type I${1:${TM_FILENAME_BASE}}Props = {}",
